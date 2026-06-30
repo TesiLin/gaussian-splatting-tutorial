@@ -1,0 +1,6 @@
+[submodule "code/3dgs"]
+	path = code/3dgs
+	url = https://github.com/TesiLin/gaussian-splatting.git
+[submodule "code/2dgs"]
+	path = code/2dgs
+	url = https://github.com/TesiLin/2d-gaussian-splatting.git
