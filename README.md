@@ -1,6 +1,9 @@
-# Install
+# A tutorial for gaussian-splatting
 
-```git
+
+## Install
+
+```Shell
 git clone --recursive https://github.com/TesiLin/gaussian-splatting-tutorial.git
 
 conda create --name gs -y python=3.8
@@ -14,3 +17,7 @@ conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 
 uv pip install -r requirements.txt
 ```
+
+
+## Train
+
