@@ -1,11 +1,22 @@
-
 # Gaussian Splatting Tutorial
 
 This project is prepared for the GIS summer practice course. Its goal is to learn a new computer vision technique, Gaussian Splatting, and run a simple hands-on practice with 3DGS and 2DGS.
 
 ## Install
 
+Use the public image on the platform: `cuda118_ubuntu2004_jdk-g22438017lhx:20250325`
+
+Recommended mount paths:
+
+| Data Path                 | Mount Path             | Usage       | Mount Type |
+| -------------------------- | ---------------------- | ----------- | ---------- |
+| /<USER_PATH>/vscode-server | /root/.vscode-server   | Direct use  | Normal     |
+| /<USER_PATH>/envs          | /root/miniforge3/envs/ | Direct use  | Normal     |
+| /<USER_PATH>/code          | /workspace/code        | Direct use  | Normal     |
+
+
 ```Shell
+cd /workspace/code
 git clone --recursive https://github.com/TesiLin/gaussian-splatting-tutorial.git
 
 conda create --name gs -y python=3.8
@@ -19,6 +30,7 @@ conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 
 uv pip install -r requirements.txt --no-build-isolation
 ```
+
 
 ## Dataset
 
@@ -46,6 +58,11 @@ Run 2DGS:
 cd code/2dgs
 bash scripts/quicktest_dxq0629.sh
 ```
+
+## Visualize
+
+- Gaussian splatting results: use [SuperSplat](https://playcanvas.com/supersplat/editor) for preview
+- Mesh results: use MeshLab for preview
 
 ## Acknowledgements
 
