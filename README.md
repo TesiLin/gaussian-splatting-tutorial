@@ -15,8 +15,12 @@ uv pip install torch==2.1.2+cu118 torchvision==0.16.2+cu118 --extra-index-url ht
 
 conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 
-uv pip install -r requirements.txt
+uv pip install -r requirements.txt --no-build-isolation
 ```
+
+
+## Dataset
+
 
 
 ## Train
