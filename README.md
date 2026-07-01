@@ -1,5 +1,7 @@
-# A tutorial for gaussian-splatting
 
+# Gaussian Splatting Tutorial
+
+This project is prepared for the GIS summer practice course. Its goal is to learn a new computer vision technique, Gaussian Splatting, and run a simple hands-on practice with 3DGS and 2DGS.
 
 ## Install
 
@@ -18,10 +20,37 @@ conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 uv pip install -r requirements.txt --no-build-isolation
 ```
 
-
 ## Dataset
 
+Download the dataset and place it under the `dataset` folder. The expected folder structure is:
 
+```text
+dataset/
++-- dxq0629_bbox_959_1961/
+    +-- images/
+    +-- sparse/
+```
 
-## Train
+## Usage
+
+Run 3DGS:
+
+```Shell
+cd code/3dgs
+bash assemble_dxq.sh
+```
+
+Run 2DGS:
+
+```Shell
+cd code/2dgs
+bash scripts/quicktest_dxq0629.sh
+```
+
+## Acknowledgements
+
+This tutorial is built on top of the following open-source projects:
+
+- [3D Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting)
+- [2D Gaussian Splatting](https://github.com/hbb1/2d-gaussian-splatting)
 
