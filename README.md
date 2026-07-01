@@ -8,11 +8,11 @@ Use the public image on the platform: `cuda118_ubuntu2004_jdk-g22438017lhx:20250
 
 Recommended mount paths:
 
-| Data Path                 | Mount Path             | Usage       | Mount Type |
-| -------------------------- | ---------------------- | ----------- | ---------- |
-| /<USER_PATH>/vscode-server | /root/.vscode-server   | Direct use  | Normal     |
-| /<USER_PATH>/envs          | /root/miniforge3/envs/ | Direct use  | Normal     |
-| /<USER_PATH>/code          | /workspace/code        | Direct use  | Normal     |
+| Data Path                  | Mount Path             | Usage      | Mount Type |
+| -------------------------- | ---------------------- | ---------- | ---------- |
+| /<USER_PATH>/vscode-server | /root/.vscode-server   | Direct use | Normal     |
+| /<USER_PATH>/envs          | /root/miniforge3/envs/ | Direct use | Normal     |
+| /<USER_PATH>/code          | /workspace/code        | Direct use | Normal     |
 
 
 ```Shell
