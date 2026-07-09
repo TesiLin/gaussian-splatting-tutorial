@@ -64,7 +64,7 @@ bash scripts/quicktest_dxq0629.sh
 
 ## Visualize
 
-- Gaussian splatting results: use [SuperSplat](https://playcanvas.com/supersplat/editor) for preview
+- Gaussian splatting results: deploy the [SuperSplat](https://github.com/playcanvas/supersplat) locally for preview.
 - Mesh results: use [MeshLab](https://www.meshlab.net/#download) for preview
 
 ## Acknowledgements
