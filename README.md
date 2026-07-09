@@ -32,11 +32,16 @@ uv pip install -r requirements.txt --no-build-isolation
 
 ## Dataset
 
-Download the dataset and place it under the `dataset` folder.  /wThe expected folder structure is:
+Download the dataset and place it under the `dataset` folder.  
+
+The expected folder structure is:
 
 ```text
 dataset/
 +-- dxq0629_bbox_959_1961/
+    +-- images/
+    +-- sparse/
++-- dxq0629_colmap/
     +-- images/
     +-- sparse/
 ```
