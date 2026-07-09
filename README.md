@@ -14,7 +14,6 @@ Recommended mount paths:
 | /<USER_PATH>/envs          | /root/miniforge3/envs/ | Direct use | Normal     |
 | /<USER_PATH>/code          | /workspace/code        | Direct use | Normal     |
 
-
 ```Shell
 cd /workspace/code
 git clone --recursive https://github.com/TesiLin/gaussian-splatting-tutorial.git
@@ -31,10 +30,9 @@ conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 uv pip install -r requirements.txt --no-build-isolation
 ```
 
-
 ## Dataset
 
-Download the dataset and place it under the `dataset` folder. The expected folder structure is:
+Download the dataset and place it under the `dataset` folder.  /wThe expected folder structure is:
 
 ```text
 dataset/
@@ -70,4 +68,3 @@ This tutorial is built on top of the following open-source projects:
 
 - [3D Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting)
 - [2D Gaussian Splatting](https://github.com/hbb1/2d-gaussian-splatting)
-
