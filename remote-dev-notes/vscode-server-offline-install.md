@@ -1,5 +1,23 @@
 # VSCode Server 手动安装/无网络安装
 
-首先，如果[ssh反向代理](./ssh-reverse-proxy.md)先配置，理论上用vscode远程连接linux服务器的时候，vscode-server会自动下载安装了。
+首先，安装 VSCode Server 和 Remote - SSH 插件。
 
-如果因为某些原因失败了，仍然需要在无网络情况下安装，那么请参考：[VSCode Server 手动安装/无网络安装](https://zhuanlan.zhihu.com/p/2041176071022829953)
+但到这一步为止，还不能顺利连上服务器，因为使用Remote-SSH的时候需要在服务器上下载一个 vscode-server ，这个下载过程需要联网。
+
+并且，配置的SSH反向代理仅活跃在当前会话，**并不会自动传给 VS Code Remote-SSH 用来安装 `.vscode-server` 的那条 SSH 会话** 。
+
+# 方案一
+
+设置 Remote - SSH，优先让 VS Code 在本地下载 server，再传到远程。
+
+![1783915756913](assets/1783915756913.png)
+
+```
+"remote.SSH.localServerDownload": "always"
+```
+
+这样 `.vscode-server` 不需要远程服务器自己联网下载。
+
+# 方案二
+
+仍然需要在无网络情况下安装，那么请参考：[VSCode Server 手动安装/无网络安装](https://zhuanlan.zhihu.com/p/2041176071022829953)

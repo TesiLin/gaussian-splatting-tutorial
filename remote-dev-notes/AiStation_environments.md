@@ -38,6 +38,8 @@
 | /<USER_PATH>/vscode-server | /root/.vscode-server   | Direct use | Normal     |
 | /<USER_PATH>/envs          | /root/miniforge3/envs/ | Direct use | Normal     |
 | /<USER_PATH>/code          | /workspace/code        | Direct use | Normal     |
+| /<GROUP_SHARE>/dxq0629_bbox_959_1961 | /workspace/code/gaussian-splatting-tutorial/dataset/ | Direct use | Normal     |
+| /<GROUP_SHARE>/dxq0629_colmap | /workspace/code/gaussian-splatting-tutorial/dataset/ | Direct use | Normal     |
 
 - 其他不用管
 
