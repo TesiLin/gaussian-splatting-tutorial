@@ -1,18 +1,23 @@
 # Gaussian Splatting Tutorial
 
+[中文教程](README_CN.md)
+
 This project is prepared for the GIS summer practice course. Its goal is to learn a new computer vision technique, Gaussian Splatting, and run a simple hands-on practice with 3DGS and 2DGS.
 
 ## Install
 
-Use the public image on the platform: `cuda118_ubuntu2004_jdk-g22438017lhx:20250325`
+### GPU settings
 
-Recommended mount paths:
+Please refer to [AiStation_environments.md](./remote-dev-notes/AiStation_environments.md).
 
-| Data Path                  | Mount Path             | Usage      | Mount Type |
-| -------------------------- | ---------------------- | ---------- | ---------- |
-| /<USER_PATH>/vscode-server | /root/.vscode-server   | Direct use | Normal     |
-| /<USER_PATH>/envs          | /root/miniforge3/envs/ | Direct use | Normal     |
-| /<USER_PATH>/code          | /workspace/code        | Direct use | Normal     |
+More information related to the platform / SSH / IDE / ..., please refer to [remote-dev-notes](./remote-dev-notes/README.md).
+
+Steps:
+1. Create a GPU environment and mount the data and code directories
+2. Set up SSH reverse proxy
+3. Proceed to the next step to pull the code and create the conda environment
+
+### conda
 
 ```Shell
 cd /workspace/code
@@ -32,7 +37,7 @@ uv pip install -r requirements.txt --no-build-isolation
 
 ## Dataset
 
-Download the dataset and place it under the `dataset` folder.  
+Download the dataset and place it under the `dataset` folder.
 
 The expected folder structure is:
 

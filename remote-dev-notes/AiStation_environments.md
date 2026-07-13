@@ -27,19 +27,20 @@
 ### 2.2 创建开发环境
 
 - 入口位置
-  ![](./assets/docker_0.png)
+  ![img](./assets/docker_0.png)
 - 基础配置（名称、镜像选择、资源规格）
-  ![](./assets/docker_1.png)
+  使用公开镜像 `other/cuda118_ubuntu2004_jdk-g22438017lhx:20250325`
+  ![img](./assets/docker_1.png)
 - 存储挂载（数据集/代码目录）
   推荐按照我的配置一比一复刻。
 
-| Data Path                  | Mount Path             | Usage      | Mount Type |
-| -------------------------- | ---------------------- | ---------- | ---------- |
-| /<USER_PATH>/vscode-server | /root/.vscode-server   | Direct use | Normal     |
-| /<USER_PATH>/envs          | /root/miniforge3/envs/ | Direct use | Normal     |
-| /<USER_PATH>/code          | /workspace/code        | Direct use | Normal     |
+| Data Path                            | Mount Path                                           | Usage      | Mount Type |
+| ------------------------------------ | ---------------------------------------------------- | ---------- | ---------- |
+| /<USER_PATH>/vscode-server           | /root/.vscode-server                                 | Direct use | Normal     |
+| /<USER_PATH>/envs                    | /root/miniforge3/envs/                               | Direct use | Normal     |
+| /<USER_PATH>/code                    | /workspace/code                                      | Direct use | Normal     |
 | /<GROUP_SHARE>/dxq0629_bbox_959_1961 | /workspace/code/gaussian-splatting-tutorial/dataset/ | Direct use | Normal     |
-| /<GROUP_SHARE>/dxq0629_colmap | /workspace/code/gaussian-splatting-tutorial/dataset/ | Direct use | Normal     |
+| /<GROUP_SHARE>/dxq0629_colmap        | /workspace/code/gaussian-splatting-tutorial/dataset/ | Direct use | Normal     |
 
 - 其他不用管
 
