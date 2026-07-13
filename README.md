@@ -13,6 +13,7 @@ Please refer to [AiStation_environments.md](./remote-dev-notes/AiStation_environ
 More information related to the platform / SSH / IDE / ..., please refer to [remote-dev-notes](./remote-dev-notes/README.md).
 
 Steps:
+
 1. Create a GPU environment and mount the data and code directories
 2. Set up SSH reverse proxy
 3. Proceed to the next step to pull the code and create the conda environment

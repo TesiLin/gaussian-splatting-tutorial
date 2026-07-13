@@ -34,13 +34,13 @@
 - 存储挂载（数据集/代码目录）
   推荐按照我的配置一比一复刻。
 
-| Data Path                            | Mount Path                                           | Usage      | Mount Type |
-| ------------------------------------ | ---------------------------------------------------- | ---------- | ---------- |
-| /<USER_PATH>/vscode-server           | /root/.vscode-server                                 | Direct use | Normal     |
-| /<USER_PATH>/envs                    | /root/miniforge3/envs/                               | Direct use | Normal     |
-| /<USER_PATH>/code                    | /workspace/code                                      | Direct use | Normal     |
-| /<GROUP_SHARE>/dxq0629_bbox_959_1961 | /workspace/code/gaussian-splatting-tutorial/dataset/ | Direct use | Normal     |
-| /<GROUP_SHARE>/dxq0629_colmap        | /workspace/code/gaussian-splatting-tutorial/dataset/ | Direct use | Normal     |
+| Data Path                            | Mount Path                                                                | Usage      | Mount Type |
+| ------------------------------------ | ------------------------------------------------------------------------- | ---------- | ---------- |
+| /<USER_PATH>/vscode-server           | /root/.vscode-server                                                      | Direct use | Normal     |
+| /<USER_PATH>/envs                    | /root/miniforge3/envs/                                                    | Direct use | Normal     |
+| /<USER_PATH>/code                    | /workspace/code                                                           | Direct use | Normal     |
+| /<GROUP_SHARE>/dxq0629_bbox_959_1961 | /workspace/code/gaussian-splatting-tutorial/dataset/dxq0629_bbox_959_1961 | Direct use | Normal     |
+| /<GROUP_SHARE>/dxq0629_colmap(1)     | /workspace/code/gaussian-splatting-tutorial/dataset/dxq0629_colmap        | Direct use | Normal     |
 
 - 其他不用管
 
