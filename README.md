@@ -68,6 +68,48 @@ cd code/2dgs
 bash scripts/quicktest_dxq0629.sh
 ```
 
+### Tweaking parameters
+
+Open the corresponding shell script and adjust the following parameters as needed:
+
+| Parameter | Description | Suggested value |
+|---|---|---|
+| `-r <N>` | Downscale the training images by a factor of N | `4` (to avoid OOM on 20 GB cards) |
+| `--iterations <N>` | Number of training iterations | 30k for 3DGS (`dxq0629_colmap`), 60k for 2DGS (`dxq0629_bbox_959_1961`) |
+
+### FAQ
+
+#### 1. FileNotFoundError: No such file or directory: 'output/.../cfg_args'
+
+The training step (`train.py`) was skipped. Make sure both `train.py` and `render.py` are uncommented in the script, and that the `DATASET` variable points to the correct path:
+
+- For 3DGS: `DATASET="../../dataset/dxq0629_colmap"`
+- For 2DGS: `DATASET="../../dataset/dxq0629_bbox_959_1961"`
+
+#### 2. RuntimeError: NVML_SUCCESS == r INTERNAL ASSERT FAILED (CUDACachingAllocator.cpp)
+
+This is an out-of-memory (OOM) error — 20 GB VRAM may be insufficient for large scenes.
+
+Solutions:
+
+1. Increase the downscaling factor: change `-r 2` to `-r 4` in the training command.
+2. Switch to a 40 GB GPU (e.g., A100).
+
+> **Note:** 40 GB GPUs are a limited resource. Save your results and release/pause your GPU environment when you are done.
+
+#### 3. Poor Gaussian splatting / mesh results
+
+Insufficient training iterations. Increase `--iterations`:
+
+- 3DGS on `dxq0629_colmap`: `--iterations 30000`
+- 2DGS on `dxq0629_bbox_959_1961`: `--iterations 60000`
+
+Example for 2DGS:
+
+```Shell
+python train.py -s "$DATASET" -m "$MODEL" --iterations 60000
+```
+
 ## Visualize
 
 - Gaussian splatting results: deploy the [SuperSplat](https://github.com/playcanvas/supersplat) locally for preview.
