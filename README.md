@@ -1,4 +1,4 @@
-# Gaussian Splatting Tutorial
+#Gaussian Splatting Tutorial
 
 [中文教程](README_CN.md)
 
@@ -72,10 +72,10 @@ bash scripts/quicktest_dxq0629.sh
 
 Open the corresponding shell script and adjust the following parameters as needed:
 
-| Parameter | Description | Suggested value |
-|---|---|---|
-| `-r <N>` | Downscale the training images by a factor of N | `4` (to avoid OOM on 20 GB cards) |
-| `--iterations <N>` | Number of training iterations | 30k for 3DGS (`dxq0629_colmap`), 60k for 2DGS (`dxq0629_bbox_959_1961`) |
+| Parameter            | Description                                    | Suggested value                                                             |
+| -------------------- | ---------------------------------------------- | --------------------------------------------------------------------------- |
+| `-r <N>`           | Downscale the training images by a factor of N | `4` (to avoid OOM on 20 GB cards)                                         |
+| `--iterations <N>` | Number of training iterations                  | 30k for 3DGS (`dxq0629_colmap`), 60k for 2DGS (`dxq0629_bbox_959_1961`) |
 
 ### FAQ
 

@@ -6,3 +6,4 @@
 | [ssh-reverse-proxy.md](./ssh-reverse-proxy.md)                         | Linux 服务器无法联网，借用本地电脑网络访问网络            | 用于拉取 GitHub 仓库、配置 conda 等 |
 | [vscode-server-offline-install.md](./vscode-server-offline-install.md) | 服务器离线时安装 VSCode Server，使 Remote-SSH 可用        | 推荐方案一：手动下载后传到服务器    |
 | [tmux-for-long-tasks.md](./tmux-for-long-tasks.md)                     | 长时间运行任务，防止网络波动/SSH 断开导致任务中断         | 训练、安装依赖等场景                |
+| [conda-pack.md](./conda-pack.md)                                       | 离线环境下打包 & 迁移 conda 环境到服务器                  | 服务器无法联网时配置 Python 环境    |
