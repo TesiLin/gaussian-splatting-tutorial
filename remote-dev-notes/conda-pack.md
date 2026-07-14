@@ -55,12 +55,12 @@ find ./code/3dgs/submodules/diff-gaussian-rasterization ./code/3dgs/submodules/f
 
 ```bash
 # 3DGS CUDA extensions
-uv pip install ./code/3dgs/submodules/diff-gaussian-rasterization
-uv pip install ./code/3dgs/submodules/fused-ssim
-uv pip install ./code/3dgs/submodules/simple-knn
+uv pip install ./code/3dgs/submodules/diff-gaussian-rasterization --no-build-isolation
+uv pip install ./code/3dgs/submodules/fused-ssim --no-build-isolation
+uv pip install ./code/3dgs/submodules/simple-knn --no-build-isolation
 
 # 2DGS CUDA extensions
-uv pip install ./code/2dgs/submodules/diff-surfel-rasterization
+uv pip install ./code/2dgs/submodules/diff-surfel-rasterization --no-build-isolation
 ```
 
 至此，gs 环境配置完成。
